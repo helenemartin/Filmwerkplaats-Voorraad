@@ -10,7 +10,7 @@
  *
  *= require_self
  *= require_tree .
- */
+ /*/
 #banner {
   background: black;
   padding: 45px;
@@ -27,29 +27,29 @@
 }
 
 #columns {
-  background: #141;
+  background: black;
 
   #main {
     margin-left: 17em;
     padding: 1em;
     background: white;
-}
-  #side {
+  
+    #side {
     float: left;
     padding: 1em 2em;
-    width: 100em;
+    width: 13em;
     background: white;
-  /*}*/
-  
+
       ul {
-      padding: 0;
+      padding: 10px;
         li {
         list-style: none;
-        a {
+          a {
           color: white;
           font-size: small;
-              }   
+          }
+        }
       }
-    } 
+    }
   }
 }

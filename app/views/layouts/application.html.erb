@@ -8,19 +8,21 @@
 </head>
 <body class='<%= controller.controller_name %>'>
   <div id="banner">
+
     <%= image_tag("filmwerkplaatslogo.jpg") %>
-    <%= @page_title || "Filmwerkplaats Voorraad" %>
-  </div>
+    <%= @page_title || "Voorraad" %>
+              
   <div id="columns">
     <div id="side">
       <ul>
         <li><a href="https://github.com/helenemartin"><home></a></li>
         <li><a href=""><Questions></a></li>
         <li><a href=""><News></a></li>
-        <li><a href=""><Contact></a><li>
+        <li><a href=""><Contact></a></li>
       </ul>
     </div>
   </div>
+</div>
 
 <%= yield %>
 
