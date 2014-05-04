@@ -10,4 +10,24 @@ class ProductsHelperTest < ActionView::TestCase
     assert product.errors[:image_url].any?
 
   end
+  test "product price must be positive" do
+    product = Product.new (
+      title: "My book title",
+      description: "yyy",
+      image_url: "zzz.jpg",
+    )
+    product.price = -1
+    assert product.invalid?
+    assert_equal ["must be graeter or equal to 0.01"],
+      product.errors[:price]
+    product.price = 1
+    assert product.valid?
+
+  def new_product(image_url)
+    Product.new(
+      title: "My book title",
+      description: "yyy",
+      price: 1,
+      image_url: image_url)
+  
 end
