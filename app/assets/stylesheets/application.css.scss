@@ -17,7 +17,7 @@
   border-bottom: 2px solid;
   font: 50px "Arial", serif;
   color: white;
-  text-align: center;
+  text-align: right;
   height: 159px;
 
   img {
@@ -26,12 +26,67 @@
   }
 }
 
+nav {
+  position:absolute;
+  right:-10px;
+  top:0;
+}
+#socialMedia {
+  position:absolute;
+  right:0;
+  top:120px;
+}
+
+#socialMedia ul li {
+   display:inline-block;
+   width:60px;
+   height:60px;
+   text-indent:-9999em;
+}
+
+#socialMedia ul li.facebook {
+  background:url(../images/sfilmwerkplaatsnav.png) 0px 64px;
+}
+#socialMedia ul li.vimeo {
+  background:url(../images/filmwerkplaatsnav.png) -59px 63px; 
+}
+
+#socialMedia ul li.linkedin {
+  background:url(../images/filmwerkplaatsnav.png) -120px 64px; 
+}
+
+#socialMedia ul li.rss {
+  background:url(images/filmwerkplaatsnav.png) -180px 64px; 
+}
+
+
+
+#socialMedia ul li.facebook:hover {
+  background:url(../images/socialnav.png) 0px 0px; 
+}
+
+#socialMedia ul li.vimeo:hover {
+  background:url(../images/filmwerkplaatsnav.png) -60px 0px; 
+}
+
+#socialMedia ul li.linkedin:hover {
+  background:url(../images/filmwerkplaatsnav.png) -120px 0px; 
+}
+
+#socialMedia ul li.rss:hover {
+  background:url(../images/filmwerkplaatsnav.png) -180px 0px; 
+}
+
+
+
+
+
 #columns {
-  background: black;
+  background: white;
 
   #main {
     margin-left: 17em;
-    padding: 1em;
+    padding: 20em;
     background: white;
   
     #side {

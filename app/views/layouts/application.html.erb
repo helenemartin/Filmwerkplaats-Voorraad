@@ -12,17 +12,22 @@
     <%= image_tag("filmwerkplaatslogo.jpg") %>
     <%= @page_title || "Voorraad" %>
               
-  <div id="columns">
-    <div id="side">
       <ul>
-        <li><a href="https://github.com/helenemartin"><home></a></li>
-        <li><a href=""><Questions></a></li>
-        <li><a href=""><News></a></li>
+        <li><%= link_to 'New Product', new_product_path %></li>
+        <li><%= link_to "Website", "http://www.sewagecorporationunit.com"%></li>
+        <li><%= link_to 'listing', products_path %></li>
         <li><a href=""><Contact></a></li>
       </ul>
-    </div>
   </div>
-</div>
+  <div id="socialMedia">
+        <ul>
+                <li class="facebook"><%= link_to "Facebook", "http://www.sewagecorporationunit.com"%></li>
+                <li class="vimeo"><%= link_to "Vimeo", "http://www.sewagecorporationunit.com"%></li>
+                <li class="linkedin"><%= link_to "Linkedin", "http://www.sewagecorporationunit.com"%></li>
+                <li class="rss"><%= link_to "RSS", "http://www.sewagecorporationunit.com"%></li>
+        </ul>
+              
+  </div>
 
 <%= yield %>
 
